@@ -24,7 +24,7 @@ def count_increasing(input, window_size):
 
 
 def solve():
-  input_path = path.join(path.dirname(__file__), './day1_input.txt')
+  input_path = path.join(path.dirname(__file__), 'data/day1.txt')
   input = read_input(input_path)
     
   print('day 1 part 1: {}'.format(
