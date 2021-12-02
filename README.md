@@ -10,4 +10,5 @@ Advent of Code 2021
 ```
 pipenv --python $(which python3) install
 pipenv --python $(which python3) shell
+python3 ./src/main.py
 ```
