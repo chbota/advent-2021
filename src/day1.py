@@ -1,17 +1,7 @@
 from functools import reduce
 from os import path
+from utils import read_input
 
-
-input_path = path.join(path.dirname(__file__), './day1_input.txt')
-
-def read_input():
-  res = []
-  with open(input_path) as reader:
-    line = reader.readline()
-    while line != '':
-      res.append(int(line))
-      line = reader.readline()
-  return res
 
 # count all increasing vals
 def count_increasing(input, window_size):
@@ -34,7 +24,8 @@ def count_increasing(input, window_size):
 
 
 def solve():
-  input = read_input()
+  input_path = path.join(path.dirname(__file__), './day1_input.txt')
+  input = read_input(input_path)
     
   print('day 1 part 1: {}'.format(
     count_increasing(input, 1)
