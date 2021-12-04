@@ -38,9 +38,9 @@ def solve():
   gamma_rate = int(gamma_rate, 2)
   epsilon_rate = int(epsilon_rate, 2)
 
-  print(gamma_rate)
-  print(epsilon_rate)
-  print(gamma_rate * epsilon_rate)
+  print('day 3 problem 1 gamma rate: {}'.format(gamma_rate))
+  print('day 3 problem 1 epsilon rate: {}'.format(epsilon_rate))
+  print('day 3 problem 1 answer: {}'.format(gamma_rate * epsilon_rate))
 
   # part 2
   oxygen = input
@@ -64,4 +64,4 @@ def solve():
   oxygen_reading = int(oxygen[0], 2)
   carbon_reading = int(carbon[0], 2)
 
-  print(oxygen_reading * carbon_reading)
+  print('day 3 problem 2 answer: {}'.format(oxygen_reading * carbon_reading))
