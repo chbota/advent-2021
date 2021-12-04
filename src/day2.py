@@ -19,11 +19,9 @@ def solve():
     elif direction == 'up':
       depth = depth - int(magnitude)
     else:
-      raise Exception('unknown direction {}'.format(direction))
+      raise Exception(f'unknown direction {direction}')
 
-  print('day 2 part 1: {}'.format(
-    position * depth
-  ))
+  print(f'day 2 part 1: {position * depth}')
 
   position = 0
   depth = 0
@@ -40,8 +38,6 @@ def solve():
       elif direction == 'up':
         aim = aim - int(magnitude)
       else:
-        raise Exception('unknown direction {}'.format(direction))
+        raise Exception(f'unknown direction {direction}')
 
-  print('day 2 part 2: {}'.format(
-    position * depth
-  ))
+  print(f'day 2 part 2: {position * depth}')

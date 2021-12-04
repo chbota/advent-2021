@@ -27,10 +27,5 @@ def solve():
   input_path = path.join(path.dirname(__file__), 'data/day1.txt')
   input = read_input(input_path, int)
     
-  print('day 1 part 1: {}'.format(
-    count_increasing(input, 1)
-  ))
-
-  print('day 1 part 2: {}'.format(
-    count_increasing(input, 3)
-  ))
+  print(f'day 1 part 1: {count_increasing(input, 1)}')
+  print(f'day 1 part 2: {count_increasing(input, 3)}')
