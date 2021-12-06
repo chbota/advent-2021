@@ -49,4 +49,4 @@ def solve():
       if point >= 2:
         num_dangerous += 1
 
-  print(f'day 5 part 1 {num_dangerous}')
+  print(f'day 5 part 2 {num_dangerous}')
