@@ -48,12 +48,6 @@ def parse_boards(boards):
 
   return parsed
 
-def print_board(board):
-  for x in range(len(board)):
-      printed_row = reduce(lambda acc, curr: f'{acc} {curr}', board[x])
-      print(printed_row)
-
-
 def play_game(boards, numbers):
   winners = []
   for number in numbers:

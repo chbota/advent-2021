@@ -1,3 +1,4 @@
+from functools import reduce
 from os import path
 
 
@@ -13,3 +14,9 @@ def read_input(path, process = lambda x: x):
 
 def get_data_path(input_path):
  return path.join(path.dirname(__file__), f'./data/{input_path}')
+
+
+def print_grid(grid):
+  for x in range(len(grid)):
+      printed_row = reduce(lambda acc, curr: f'{acc} {curr}', grid[x])
+      print(printed_row)
