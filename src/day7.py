@@ -19,7 +19,7 @@ def increasing_cost(x, y):
 def solve():
   crabs = [int(x) for x in read_input(data('day7.txt'))[0].split(',')]
 
-  (first_meeting_spot, first_fuel_cost) = find_best_meeting_spot(crabs, lambda x, y: abs(x - y))
+  (first_meeting_spot, first_fuel_cost) = find_best_meeting_spot(crabs, linear_cost)
   print(f'day 7 part 1 meet at {first_meeting_spot}, {first_fuel_cost}')
 
   (second_meeting_spot, second_fuel_cost) = find_best_meeting_spot(crabs, increasing_cost)
