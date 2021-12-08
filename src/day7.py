@@ -1,11 +1,11 @@
 from utils import read_input, data
 
-def calc_distances(input, candidate, cost):
-  return [cost(x, candidate) for x in input]
+def calc_fuel_cost(input, spot, cost):
+  return [cost(x, spot) for x in input]
 
 def find_best_meeting_spot(crabs, cost):
   candidate_spots = list(range(min(crabs), max(crabs)))
-  crab_fuel_costs = [sum(calc_distances(crabs, x, cost)) for x in candidate_spots]
+  crab_fuel_costs = [sum(calc_fuel_cost(crabs, spot, cost)) for spot in candidate_spots]
   min_cost = min(crab_fuel_costs)
   return (candidate_spots[crab_fuel_costs.index(min_cost)], min_cost)
 
