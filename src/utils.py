@@ -12,7 +12,7 @@ def read_input(path, process = lambda x: x):
   return res
 
 
-def get_data_path(input_path):
+def data(input_path):
  return path.join(path.dirname(__file__), f'./data/{input_path}')
 
 

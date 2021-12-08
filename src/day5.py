@@ -1,4 +1,4 @@
-from utils import print_grid, read_input, get_data_path
+from utils import print_grid, read_input, data
 
 import re
 
@@ -36,7 +36,7 @@ def draw_lines(space, point_pairs):
 
 
 def solve():
-  input = read_input(get_data_path('day5.txt'))
+  input = read_input(data('day5.txt'))
 
   point_pairs = filter(lambda x: x is not None, map(parse_line, input))
   space = [[0 for y in range(1000)] for x in range(1000)]

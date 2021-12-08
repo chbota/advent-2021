@@ -1,6 +1,6 @@
 
 from functools import reduce
-from utils import read_input, get_data_path
+from utils import read_input, data
 
 
 CALLED_NUMBER = 'XX'
@@ -72,7 +72,7 @@ def sum_board(board):
   return summed_board
 
 def solve():
-  input = read_input(get_data_path('day4.txt'))
+  input = read_input(data('day4.txt'))
 
   numbers = input[0].split(',')
   boards = parse_boards(input[2:])
